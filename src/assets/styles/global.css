@@ -1,0 +1,19 @@
+:root {
+    --color-background: #FFFFFF;
+    --color-primary: #52bf90;
+    --color-primary-message: #04D361;
+    --color-secundary: #419873;
+    --color-secundary-dark: #317256;
+    --color-text-title: #013220;
+    --color-progress-weak: #ff3957;
+    --color-progress-medium: #ffd900;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+body, div, button {
+    font: 500 1.7rem Lato;
+    color: var(--color-text-title);
+} 
