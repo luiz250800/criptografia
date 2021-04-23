@@ -1,0 +1,16 @@
+.progress {
+    width: 20%;
+}
+
+.progress-bar{
+    width: 25%;
+    background-color: var(--color-progress-weak) !important;
+}
+
+.text-level-password{
+    color: var(--color-progress-weak) !important;
+}
+
+.align-left{
+    float:left;
+}

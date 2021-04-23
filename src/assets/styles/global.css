@@ -5,14 +5,15 @@
     --color-secundary: #419873;
     --color-secundary-dark: #317256;
     --color-text-title: #013220;
-    --color-text-base: #011910;
+    --color-progress-weak: #ff3957;
+    --color-progress-medium: #ffd900;
 }
 
 body {
     background-color: var(--color-background);
 }
 
-body, input, button {
-    font: 500 1.6rem Lato;
-    color: var(--color-text-base);
-}
+body, div, button {
+    font: 500 1.7rem Lato;
+    color: var(--color-text-title);
+} 
