@@ -57,7 +57,7 @@ function Register() {
                 </div>
             </div>
             <div className="text-center">
-                <button type="submit" className="btn btn-success button">Entrar</button>
+                <button type="submit" className="btn btn-success button">Cadastrar-se</button>
             </div>
             </form>
         </CardBody>

@@ -22,7 +22,7 @@ function Login() {
           }).then((response) => {
             const data = response.data;
             if(data) {
-              history.push('/index');
+              history.push({pathname: '/index', search: '', state: {email: data.findUser.email}});
             } else {
               alert('E-mail ou senha incorretos.')
             }
