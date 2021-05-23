@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import CodeConfirmRegister from './pages/CodeConfirmRegister';
 import RegisterPassword from './pages/RegisterPassword';
+import ForgotPassword from './pages/ForgotPassword';
 import Index from './pages/Index';
 
 function Routes() {
@@ -15,6 +16,7 @@ function Routes() {
         <Route path="/confirmRegister" exact component={CodeConfirmRegister} />
         <Route path="/registerPassword" exact component={RegisterPassword} />
         <Route path="/index" exact component={Index} />
+        <Route path="/forgotPassword" exact component={ForgotPassword} />
         </BrowserRouter>
     );
 }

@@ -40,12 +40,15 @@ function Login() {
             <div className="content">
                 <div className="mb-3">
                     <label className="form-label">Digite seu e-mail:</label>
+                    </div>
                     <input type="email" className="form-control" id="nmEmail" placeholder="E-mail"></input>
-                </div>
+                
                 <div className="mb-3">
                     <label className="form-label">Digite sua senha:</label>
                     <input type="password" className="form-control" id="nmPassword" placeholder="Senha"></input>
-                    <a href="/register" className="form-text  link-register">Não possui login? Cadastre-se!</a>
+                    <div className="d-flex justify-content-between">
+                      <a href="/register" className="form-text link-register">Não possui login? Cadastre-se!</a><a href="/forgotPassword" className="form-text link-register">Esqueceu sua senha?</a>
+                    </div>
                 </div>
             </div>
             <div className="text-center">

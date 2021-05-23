@@ -30,7 +30,7 @@ function Index() {
         e.preventDefault();
         
         await api.post('/email', {
-            email: email
+            email
         }).then((response) => {
             const data = response.data;
             if(data) {
