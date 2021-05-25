@@ -30,7 +30,8 @@ function Index() {
         e.preventDefault();
         
         await api.post('/email', {
-            email
+            email,
+            forgotPassword: "S"
         }).then((response) => {
             const data = response.data;
             if(data) {

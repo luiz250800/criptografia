@@ -10,7 +10,7 @@ function RegisterPassword() {
     const location = useLocation();
 
     const [id, setId] = useState()
-    const [lastPasswordExists, setLastPasswordExists] = useState(true)
+    const [forgotPassword, setForgotPassword] = useState("")
     const [validatePassword, setValidadePassword] = useState(false)
 
     useEffect(() => {
@@ -18,9 +18,9 @@ function RegisterPassword() {
         
         if(state){
             setId(state.idUser)
-            setLastPasswordExists(state.lastPasswordExists)
-
-            if(!lastPasswordExists){
+            setForgotPassword(state.forgotPassword)
+            
+            if(state.forgotPassword !== "S"){
                 const actualPassword = document.getElementById('actualPassword') as HTMLInputElement;
                 actualPassword.classList.add("d-none");
             } else {
@@ -81,7 +81,7 @@ function RegisterPassword() {
     async function confirmRegister(e: any) {  
         e.preventDefault();
         const lastPasswordInput = document.getElementById('lastPassword') as HTMLInputElement;
-        const lastPassword = lastPasswordInput.value === "" && !lastPasswordExists ? null : lastPasswordInput.value;
+        const lastPassword = lastPasswordInput.value === "" && forgotPassword !== "S" ? null : lastPasswordInput.value;
         const passwordInput = document.getElementById('password') as HTMLInputElement;
         const password = passwordInput.value;
         if (password !== "" && lastPassword !== "" && validatePassword) {

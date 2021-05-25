@@ -19,7 +19,7 @@ function CodeConfirmRegister() {
           }).then((response) => {
             const data = response.data;
             if(data) {
-              history.push({ pathname: '/registerPassword', search: '', state: {idUser: data.userData.id, lastPasswordExists: data.userData.lastPassword !== null}});
+              history.push({ pathname: '/registerPassword', search: '', state: {idUser: data.userData.id, forgotPassword: data.userData.forgotPassword}});
             } else {
               alert('Código inválido.')
             }
