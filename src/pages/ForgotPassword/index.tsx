@@ -18,10 +18,9 @@ function ForgotPassword() {
             const data = response.data;
             if(data) {
                 alert('E-mail enviado para refazer senha.')
-            } else {
-                alert('E-mail não encontrado em nosso sistema.')
-            }
+            } 
           }).catch(() => {
+            alert('E-mail não encontrado em nosso sistema.')
           })
         } else {
           alert('Preencha todos os campos')
