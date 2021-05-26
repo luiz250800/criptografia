@@ -94,7 +94,7 @@ function RegisterPassword() {
                 alert('Senha cadastrada com sucesso!')
                 history.push("/");
             } else {
-                alert('Código inválido.')
+                alert('Senha não cadastrada.')
             }
           }).catch(({response}) => {
             alert(response.data.error);

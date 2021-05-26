@@ -21,10 +21,10 @@ function CodeConfirmRegister() {
             if(data) {
               history.push({ pathname: '/registerPassword', search: '', state: {idUser: data.userData.id, forgotPassword: data.userData.forgotPassword}});
             } else {
-              alert('Código inválido.')
+              alert('Código inválido ou expirado. Por favor, cadastre-se novamente!')
             }
           }).catch(({response}) => {
-            alert(response.data.error);
+            alert('Código inválido ou expirado. Por favor, cadastre-se novamente!')
           })
         } else {
           alert('Preencha todos os campos')
